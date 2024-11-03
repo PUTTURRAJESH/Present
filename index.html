@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header"> 
+    <div class="container">
+        <nav>
+            <img src="images/GOLO.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Expertise</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p> Front End Developer</p>
+            <h1> Hello, I'm Rajeswari</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about-------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/GD.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello! My name is Rajeswari. I like to think of myself as pretty smart, but honestly, I forget things quite easily! Sleep is a top priority for me—it's my favorite way to recharge. Above all, I deeply value my family and the love and support they bring into my life.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Front End</span><br>Developer</li>
+                        <li><span>Web Development</span><br>Web Pages Development</li>
+                        <li><span>App Development</span><br>Building Websites</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2022</span><br>To Do List Chesaa</li>
+                        <li><span>2023</span><br>Enjoy Chesaa</li>
+                        <li><span>2024</span><br>Kashtapadi HRMS Chesaa Kaani Marchipoyaa...</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2018</span><br>Kiran High School</li>
+                        <li><span>2022</span><br>VEMU Institute Of Technology</li>
+                        <li><span>2024</span><br>VEMU Institute Of Technology</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- --------Expertise---------  -->
+ <div id="Expertise">
+    <div class="container">
+        <h1 class="sub-title">My Knowledge</h1>
+        <div class="Expertise-list">
+            <div>
+                <h2>Unnatural Ability Of Misunderstanding</h2>
+                <p>I have a special talent which is misunderstanding things in the most ridiculous ways possible! Conversations with me might take unexpected (and often hilarious) turns because I’ll probably hear something totally different from what was said.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>Forgetting Things</h2>
+                <p>I'm practically a pro at forgetting things. You could tell me something important, and ten minutes later, poof...It’s vanished.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>Small Perspective Of Life</h2>
+                <p>I have a knack for seeing life through a funny little lens of wrong assumptions.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+ </div>
+ <!-- ------------portfolio------------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/TO DO.png">
+                <div class="layer">
+                    <h3>To Do List</h3>
+                    <p>Manadhey Idhanthaa... # Smart Rajee</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Enjoy.png.png">
+                <div class="layer">
+                    <h3>Enjoy Chesaa</h3>
+                    <p>Vanilla Ice Cream... Baaguntadhani Theesukunnaa... Abbey... Edho Photo Kosam Pattukoni Still Ichhaa Anthey</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/HRMS P.png">
+                <div class="layer">
+                    <h3>HRMS Project</h3>
+                    <p>Appudappudu Anipisthuntadhi... Time Baagaleka India Lo Puttinaa Kaani... Adhey Ey America Lono Puttintey... Eepaatiki Google Ki Competition Ichhey Company Pettesintaa... Chusirru Ga Painunnadhi Manamey Chesindhi... # Genius Rajee</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+
+
+
+</script>
+
+</body>
+</html>
